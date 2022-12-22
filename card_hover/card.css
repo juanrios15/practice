@@ -1,0 +1,17 @@
+.cardsize {
+    height: 235px
+}
+
+.cardbase {
+    background: linear-gradient(to right, #E52450 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .4s;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 35%);
+    border: 7px solid #333333;
+}
+
+.cardbase:hover {
+    background-position: left bottom;
+    transform: scale(1.05) !important;
+}
