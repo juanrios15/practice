@@ -1,17 +1,29 @@
 .cardsize {
-    height: 235px
+    height: 235px;
 }
 
 .cardbase {
     background: linear-gradient(to right, #E52450 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .4s;
-    box-shadow: 4px 4px 4px rgb(0 0 0 / 35%);
+    background-color: white  !important;
+    background-size: 300% 100%;
+    background-position: right;
     border: 7px solid #333333;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 35%);
+    box-sizing: border-box;
+    padding: 8px 0 !important;
+    transition: all .6s;
+}
+
+.container__card{
+    margin: 0 !important;
 }
 
 .cardbase:hover {
-    background-position: left bottom;
+
+    background-position: left;
+    background-color: #E52450 !important;
+    height: 100% !important;
     transform: scale(1.05) !important;
 }
+
+
