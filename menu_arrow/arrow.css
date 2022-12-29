@@ -1,0 +1,67 @@
+@media (min-width:1200px) {
+    .black-spot-padding {
+        padding: 2% 3% 2% 0% !important;
+    }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+    .black-spot-padding {
+        padding: 2% 3% 0% 3%;
+    }
+}
+
+@media (min-width:992px) {
+    .full-height {
+        height: 100%;
+    }
+    .sizingwhite {
+        width:53.125%
+    }
+    .sizingblack {
+            width:46.875%
+    }
+    .scroll-hidden {
+        overflow: hidden;
+    }
+    .scroll-visible {
+        overflow: auto;
+    }
+}
+
+.backwardsBtn:hover, .backwardsBtn:hover .backwards-svg {
+    color: #EFEFEF !important;
+    fill: #EFEFEF !important;
+    transition: all 0.5s;
+}
+
+.arrow-selected-svg {
+    width: 65px;
+    height: 12px;
+    fill: #E52450 !important;
+}
+
+.main-select:hover .increase-font-size {
+    font-size: 1.1rem;
+    color: #E52450 !important;
+
+}
+
+.main-select:hover .arrow-svg,
+.main-select:hover .path-arrow-svg {
+    width: 65px;
+    height: 12px;
+    transition: all ease-out 0.5s;
+    fill: #E52450 !important;
+}
+
+.static-size {
+    line-height: 20px;
+}
+
+.cera-black-title {
+    font-size: 64px !important;
+    line-height: 3rem !important;
+}
+.cera-light-title {
+    font-size: 58px !important;
+    line-height: 3rem !important;
+}
