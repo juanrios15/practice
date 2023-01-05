@@ -1,12 +1,28 @@
-@media (min-width:1200px) {
+*{
+    box-sizing: border-box;
+}
+@media (min-width:992px) and (max-width:1200px) {
     .black-spot-padding {
         padding: 2% 3% 2% 0% !important;
     }
-}
-@media (max-width: 1200px) and (min-width: 992px) {
-    .black-spot-padding {
-        padding: 2% 3% 0% 3%;
+    .container__arrow{
+        position: relative;
     }
+
+    .react, .arrow{
+        visibility: hidden;
+    }
+    .content--option{
+        padding: 0!important;
+    }
+    .main-select:hover .container__arrow  .react,
+    .main-select:hover .container__arrow  .arrow{
+        visibility: visible;
+    }
+
+    .content-text{
+        padding-left: 10px!important ;
+    }    
 }
 
 @media (min-width:992px) {
@@ -27,6 +43,10 @@
     }
 }
 
+.sizingblack{
+    padding: 0!important;
+}
+
 .backwardsBtn:hover, 
 .backwardsBtn:hover .backwards-svg {
     color: #EFEFEF !important;
@@ -37,6 +57,7 @@
 .content__option{
     padding-left:0 !important ;
 }
+
 .main-select .increase-font-size {
     font-size: 1rem;
     color: #858585;
@@ -45,7 +66,7 @@
 
 .main-select:hover .increase-font-size {
     color: #E52450 !important;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 0.5s ease-in-out ;
 }
 
@@ -59,6 +80,13 @@
     width: 30px;
     transition: width 0.8s ease-in-out;
 }
+
+ .react-select{
+    width: 49.66px;
+    height: 7.87px;
+    transition: width 0.5s ease-in-out;
+}
+
 
 .main-select:hover .container__arrow  .react{
     width: 49.66px;
@@ -79,6 +107,12 @@
     transform: translateX(27px);
     transition: transform 0.8s ease-in-out;
 }
+
+.arrow-select{
+    transform: translateX(-5px);
+    transition: transform 0.5s ease-in-out;
+}
+
 .main-select:hover .container__arrow  .arrow{
     transform: translateX(45px);
     transition: transform 0.5s ease-in-out;
@@ -86,22 +120,6 @@
 .main-select:hover .container__arrow  .arrow .path--arrow{
     position: absolute;
     fill: #e52450 !important;
-}
-
-.main-select .arrow-svg,
-.main-select .path-arrow-svg {
-    width: 29.66px;
-    height: 7.87px;
-    transition: width 0.8s ease-in-out ;
-}
-
-.main-select:hover .arrow-svg,
-.main-select:hover .path-arrow-svg {
-    width: 59.66px;
-    height: 7.87px !important;
-    fill: #e52450 !important; 
-    transition: width 0.5s ease-in-out;
-    cursor: pointer ;
 }
 
 .static-size {
