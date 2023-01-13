@@ -1,3 +1,8 @@
+@media (min-width:1200px) {
+    .black-spot-padding {
+        padding: 2% 3% 2% 0% !important;
+    }
+}
 
 @media (min-width:992px) and (max-width:1200px) {
     .black-spot-padding {
@@ -26,17 +31,12 @@
 @media (min-width:992px) {
     .full-height {
         height: 100%;
-        position: relative;
     }
     .sizingwhite {
-        position: absolute;
-        background-color: white;
-        width:49%;
-        right: 0;
-        border-radius:0 0 0 17px !important;
+        width:53.125%
     }
     .sizingblack {
-        width:53%;
+            width:46.875%
     }
     .scroll-hidden {
         overflow: hidden;
