@@ -2,14 +2,104 @@
     .black-spot-padding {
         padding: 2% 3% 2% 0% !important;
     }
+    .container__arrow{
+        position: relative;
+    }
+    .react{
+        position: absolute;
+        height: 7.87px;
+        width: 30px;
+        transition: width 0.8s ease-in-out;
+    }   
+    .react-select{
+        width: 60px;
+        height: 7.87px;
+        transition: width 0.8s ease-in-out;
+    }
+    .main-select:hover .container__arrow  .react{
+        width: 60px;
+        height: 7.87px;
+        transition: width 0.4s ease-in-out;
+    }
+    
+    .main-select:hover .container__arrow  .react .path--react{
+        fill: #e52450 !important; 
+        height: 7.87px;
+        transition: fill 0.4s ease-in-out;
+    }
+    
+    .arrow{
+        height: 7.87px;
+        color: #858585;
+        transform: translateX(26px);
+        transition: transform 0.8s ease-in-out;
+    }
+    
+    .arrow-select{
+        transform: translateX(-6px);
+        transition: transform 0.8s ease-in-out;
+    }
+    
+    .main-select:hover .container__arrow  .arrow{
+        transform: translateX(54px);
+        transition: transform 0.4s ease-in-out;
+    }
+    .main-select:hover .container__arrow  .arrow .path--arrow{
+        fill: #e52450 !important;
+        transition: fill 0.4s ease-in-out;
+    }
+
 }
 
 @media (min-width:992px) and (max-width:1200px) {
+
     .black-spot-padding {
-        padding: 2% 3% 2% 0% !important;
+        padding: 2% 3% 2% 3% !important;
     }
     .container__arrow{
         position: relative;
+    }
+    
+    /*Esta sería la flecha seleccionada (La primera)*/
+    .react-select{
+        width: 30px !important;
+        height: 7.87px;
+        transition: width 0.8s ease-in-out;
+    }
+    .arrow-select{
+        transform: translateX(-5px);
+        transition: transform 0.8s ease-in-out;
+    }
+
+    /*Este sería el esatdo inicial de la flecha sin seleccionar */
+    .react{
+        height: 7.87px;
+        width: 0px;
+        transition: width 0.8s ease-in-out;       
+    }
+    .arrow{
+        height: 7.87px;
+        color: #858585;
+        transform: translateX(-6px);
+        transition: transform 0.8s ease-in-out;
+    }
+
+    /*Cambia el estado de la parte inferior de la flecha*/
+    .main-select:hover .container__arrow  .react{
+        width: 30px;
+        height: 7.87px;
+        transition: width 0.4s ease-in-out;
+    }
+    .main-select:hover .container__arrow  .react .path--react{
+        fill: #e52450 !important; 
+        height: 7.87px;
+        transition: fill 0.4s ease-in-out;
+    }
+
+    /* Cambia el color de la parte superior de la flecha cuando se hace Hover */
+    .main-select:hover .container__arrow  .arrow .path--arrow{
+        fill: #e52450 !important;
+        transition: fill 0.4s ease-in-out;
     }
 
     .react, .arrow{
@@ -25,7 +115,7 @@
 
     .content-text{
         padding-left: 10px!important ;
-    }    
+    }
 }
 
 @media (min-width:992px) {
@@ -36,7 +126,7 @@
         width:53.125%
     }
     .sizingblack {
-            width:46.875%
+        width:46.875%
     }
     .scroll-hidden {
         overflow: hidden;
@@ -45,6 +135,7 @@
         overflow: auto;
     }
 }
+
 
 .sizingblack{
     padding: 0!important;
@@ -71,59 +162,6 @@
     color: #E52450 !important;
     font-size: 1rem;
     transition: all 0.4s ease-in-out ;
-}
-
-.container__arrow{
-    position: relative;
-}
-
-.react{
-    position: absolute;
-    height: 7.87px;
-    width: 30px;
-    transition: width 0.8s ease-in-out;
-}
-
- .react-select{
-    width: 60px;
-    height: 7.87px;
-    transition: width 0.8s ease-in-out;
-}
-
-
-.main-select:hover .container__arrow  .react{
-    width: 60px;
-    height: 7.87px;
-    transition: width 0.4s ease-in-out;
-}
-
-.main-select:hover .container__arrow  .react .path--react{
-    fill: #e52450 !important; 
-    height: 7.87px;
-    transition: fill 0.4s ease-in-out;
-}
-
-.arrow{
-    position: absolute;
-    height: 7.87px;
-    color: #858585;
-    transform: translateX(26px);
-    transition: transform 0.8s ease-in-out;
-}
-
-.arrow-select{
-    transform: translateX(-6px);
-    transition: transform 0.8s ease-in-out;
-}
-
-.main-select:hover .container__arrow  .arrow{
-    transform: translateX(54px);
-    transition: transform 0.4s ease-in-out;
-}
-.main-select:hover .container__arrow  .arrow .path--arrow{
-    position: absolute;
-    fill: #e52450 !important;
-    transition: fill 0.4s ease-in-out;
 }
 
 .static-size {
