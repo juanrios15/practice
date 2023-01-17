@@ -2,53 +2,6 @@
     .black-spot-padding {
         padding: 2% 3% 2% 0% !important;
     }
-    .container__arrow{
-        position: relative;
-    }
-    .react{
-        position: absolute;
-        height: 7.87px;
-        width: 30px;
-        transition: width 0.8s ease-in-out;
-    }   
-    .react-select{
-        width: 60px;
-        height: 7.87px;
-        transition: width 0.8s ease-in-out;
-    }
-    .main-select:hover .container__arrow  .react{
-        width: 60px;
-        height: 7.87px;
-        transition: width 0.4s ease-in-out;
-    }
-    
-    .main-select:hover .container__arrow  .react .path--react{
-        fill: #e52450 !important; 
-        height: 7.87px;
-        transition: fill 0.4s ease-in-out;
-    }
-    
-    .arrow{
-        height: 7.87px;
-        color: #858585;
-        transform: translateX(26px);
-        transition: transform 0.8s ease-in-out;
-    }
-    
-    .arrow-select{
-        transform: translateX(-6px);
-        transition: transform 0.8s ease-in-out;
-    }
-    
-    .main-select:hover .container__arrow  .arrow{
-        transform: translateX(54px);
-        transition: transform 0.4s ease-in-out;
-    }
-    .main-select:hover .container__arrow  .arrow .path--arrow{
-        fill: #e52450 !important;
-        transition: fill 0.4s ease-in-out;
-    }
-
 }
 
 @media (min-width:992px) and (max-width:1200px) {
@@ -56,65 +9,45 @@
     .black-spot-padding {
         padding: 2% 3% 2% 3% !important;
     }
-    .container__arrow{
-        position: relative;
+
+    .react-select {
+        position: absolute;
+        height: 8px !important;
+        width: 50% !important;
+        transition: width 0.5s ease-in-out;
+    }
+    .arrow-select {
+        position: absolute;
+        height: 8px !important;
+        transform: translateX(-27px) !important;
+        transition: transform 0.5s ease-in-out;
+        right: 0;
     }
     
-    /*Esta sería la flecha seleccionada (La primera)*/
-    .react-select{
-        width: 30px !important;
-        height: 7.87px;
-        transition: width 0.8s ease-in-out;
-    }
-    .arrow-select{
-        transform: translateX(-5px);
-        transition: transform 0.8s ease-in-out;
-    }
-
-    /*Este sería el esatdo inicial de la flecha sin seleccionar */
-    .react{
-        height: 7.87px;
-        width: 0px;
-        transition: width 0.8s ease-in-out;       
-    }
-    .arrow{
-        height: 7.87px;
-        color: #858585;
-        transform: translateX(-6px);
-        transition: transform 0.8s ease-in-out;
-    }
-
-    /*Cambia el estado de la parte inferior de la flecha*/
-    .main-select:hover .container__arrow  .react{
-        width: 30px;
-        height: 7.87px;
-        transition: width 0.4s ease-in-out;
-    }
-    .main-select:hover .container__arrow  .react .path--react{
-        fill: #e52450 !important; 
-        height: 7.87px;
-        transition: fill 0.4s ease-in-out;
-    }
-
-    /* Cambia el color de la parte superior de la flecha cuando se hace Hover */
-    .main-select:hover .container__arrow  .arrow .path--arrow{
-        fill: #e52450 !important;
-        transition: fill 0.4s ease-in-out;
-    }
-
-    .react, .arrow{
+    .react,
+    .arrow {
         visibility: hidden;
     }
-    .content--option{
-        padding: 0!important;
+
+    .content--option {
+        padding: 0 !important;
     }
-    .main-select:hover .container__arrow  .react,
-    .main-select:hover .container__arrow  .arrow{
+
+    .main-select:hover .container__arrow .react,
+    .main-select:hover .container__arrow .arrow {
         visibility: visible;
     }
 
-    .content-text{
-        padding-left: 10px!important ;
+    .main-select:hover .container__arrow .react {
+        width: 50% !important;
+        transition: width 0.4s ease-in-out;
+    }
+    .main-select:hover .container__arrow .arrow {
+        position: absolute;
+        height: 8px !important;
+        transform: translateX(-27px) !important;
+        transition: transform 0.5s ease-in-out;
+        right: 0;
     }
 }
 
@@ -122,46 +55,112 @@
     .full-height {
         height: 100%;
     }
+
     .sizingwhite {
-        width:53.125%
+        width: 53.125%
     }
+
     .sizingblack {
-        width:46.875%
+        width: 46.875%
     }
+
     .scroll-hidden {
         overflow: hidden;
     }
+
     .scroll-visible {
         overflow: auto;
     }
 }
 
 
-.sizingblack{
-    padding: 0!important;
+.sizingblack {
+    padding: 0 !important;
 }
 
-.backwardsBtn:hover, 
+.backwardsBtn:hover,
 .backwardsBtn:hover .backwards-svg {
     color: #EFEFEF !important;
     fill: #EFEFEF !important;
-    transition: all 0.6s;
+
+    transition: all 0.5s;
 }
 
-.content__option{
-    padding-left:0 !important ;
+.content__option {
+    padding-left: 0 !important;
 }
 
 .main-select .increase-font-size {
     font-size: 1rem;
     color: #858585;
-    transition: all 0.6s ease-in-out ;
+    transition: all 0.5s ease-in-out;
 }
 
 .main-select:hover .increase-font-size {
     color: #E52450 !important;
     font-size: 1rem;
-    transition: all 0.4s ease-in-out ;
+    transition: all 0.4s ease-in-out;
+}
+
+.content-text {
+    padding-left: 10px !important;
+}
+
+.container__arrow {
+    position: relative;
+    width: 60px !important;
+    height: 8px !important;
+    align-self: center !important;
+}
+
+.react-select {
+    position: absolute;
+    height: 8px !important;
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+.arrow-select {
+    position: absolute;
+    height: 8px;
+    transform: translateX(1px);
+    transition: transform 0.5s ease-in-out;
+    right: 0;
+}
+
+.react {
+    position: absolute;
+    height: 8px !important;
+    width: 50%;
+    transition: width 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    height: 8px;
+    transform: translateX(-29px);
+    transition: transform 0.5s ease-in-out;
+    right: 0;
+}
+
+.main-select:hover .container__arrow .react {
+    width: 100%;
+    transition: width 0.4s ease-in-out;
+}
+
+.main-select:hover .container__arrow .react .path--react {
+    fill: #e52450 !important;
+    transition: fill 0.4s ease-in-out;
+}
+
+.main-select:hover .container__arrow .arrow {
+    transform: translateX(1px);
+    transition: transform 0.4s ease-in-out;
+}
+
+.main-select:hover .container__arrow .arrow .path--arrow {
+    fill: #e52450 !important;
+    transition: fill 0.4s ease-in-out;
 }
 
 .static-size {
@@ -172,6 +171,7 @@
     font-size: 64px !important;
     line-height: 3rem !important;
 }
+
 .cera-light-title {
     font-size: 58px !important;
     line-height: 3rem !important;
