@@ -2,10 +2,62 @@
     .black-spot-padding {
         padding: 2% 3% 2% 0% !important;
     }
+    .container__arrow {
+        position: relative;
+        width: 60px !important;
+        height: 8px !important;
+        align-self: center !important;
+    }
 }
-@media (max-width: 1200px) and (min-width: 992px) {
+
+@media (min-width:992px) and (max-width:1200px) {
+    .container__arrow {
+        position: relative;
+        width: 40px !important;
+        height: 8px !important;
+        align-self: center !important;
+    }
+
     .black-spot-padding {
-        padding: 2% 3% 0% 3%;
+        padding: 2% 3% 2% 3% !important;
+    }
+
+    .react-select {
+        position: absolute;
+        height: 8px !important;
+        width: 100% !important;
+    }
+    .arrow-select {
+        position: absolute;
+        height: 8px !important;
+        transform: translateX(2px) !important;
+        right: 0;
+    }
+    
+    .react,
+    .arrow {
+        visibility: hidden;
+    }
+
+    .content--option {
+        padding: 0 !important;
+    }
+
+    .main-select:hover .container__arrow .react,
+    .main-select:hover .container__arrow .arrow {
+        visibility: visible;
+    }
+
+    .main-select:hover .container__arrow .react {
+        width: 100% !important;
+        transition: width 0.8s ease-in-out !important;
+    }
+    .main-select:hover .container__arrow .arrow {
+        position: absolute;
+        height: 8px !important;
+        transform: translateX(2px) !important;
+        transition: transform 0.7s ease-in-out !important;
+        right: 0;
     }
 }
 
@@ -13,44 +65,107 @@
     .full-height {
         height: 100%;
     }
+
     .sizingwhite {
-        width:53.125%
+        width: 53.125%
     }
+
     .sizingblack {
-            width:46.875%
+        width: 46.875%
     }
+
     .scroll-hidden {
         overflow: hidden;
     }
+
     .scroll-visible {
         overflow: auto;
     }
 }
 
-.backwardsBtn:hover, .backwardsBtn:hover .backwards-svg {
+
+.sizingblack {
+    padding: 0 !important;
+}
+
+.backwardsBtn:hover,
+.backwardsBtn:hover .backwards-svg {
     color: #EFEFEF !important;
     fill: #EFEFEF !important;
+
     transition: all 0.5s;
 }
 
-.arrow-selected-svg {
-    width: 65px;
-    height: 12px;
-    fill: #E52450 !important;
+.content__option {
+    padding-left: 0 !important;
+}
+
+.main-select .increase-font-size {
+    font-size: 1rem;
+    color: #858585;
+    transition: all 0.5s ease-in-out;
 }
 
 .main-select:hover .increase-font-size {
-    font-size: 1.1rem;
     color: #E52450 !important;
-
+    font-size: 1rem;
+    transition: all 0.4s ease-in-out;
 }
 
-.main-select:hover .arrow-svg,
-.main-select:hover .path-arrow-svg {
-    width: 65px;
-    height: 12px;
-    transition: all ease-out 0.5s;
-    fill: #E52450 !important;
+.content-text {
+    padding-left: 10px !important;
+}
+
+
+
+.react-select {
+    position: absolute;
+    height: 8px !important;
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+.arrow-select {
+    position: absolute;
+    height: 8px;
+    transform: translateX(1px);
+    transition: transform 0.5s ease-in-out;
+    right: 0;
+}
+
+.react {
+    position: absolute;
+    height: 8px !important;
+    width: 50%;
+    transition: width 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    height: 8px;
+    transform: translateX(-29px);
+    transition: transform 0.5s ease-in-out;
+    right: 0;
+}
+
+.main-select:hover .container__arrow .react {
+    width: 100%;
+    transition: width 0.4s ease-in-out;
+}
+
+.main-select:hover .container__arrow .react .path--react {
+    fill: #e52450 !important;
+    transition: fill 0.4s ease-in-out;
+}
+
+.main-select:hover .container__arrow .arrow {
+    transform: translateX(1px);
+    transition: transform 0.4s ease-in-out;
+}
+
+.main-select:hover .container__arrow .arrow .path--arrow {
+    fill: #e52450 !important;
+    transition: fill 0.4s ease-in-out;
 }
 
 .static-size {
@@ -61,6 +176,7 @@
     font-size: 64px !important;
     line-height: 3rem !important;
 }
+
 .cera-light-title {
     font-size: 58px !important;
     line-height: 3rem !important;
